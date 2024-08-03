@@ -26,6 +26,7 @@ export const dynamicApi = () => {
   }
 
   settings.headers["x-dyn-version"] = `WalletKit/${SDKVersion}`;
+  settings.headers['x-dyn-api-version'] = 'API/0.0.507';
   return new SDKApi(
     new Configuration({
       ...settings,
